@@ -37,7 +37,7 @@
     background: var(--cream);
     color: var(--text);
     min-height: 100vh;
-    overflow-x: hidden;
+    overflow-x: clip;
     display: flex;
     flex-direction: column;
   }
@@ -238,14 +238,14 @@
   }
   .cat-thumb {
     border-radius: 8px;
-    overflow: hidden;
+    overflow: visible;
     height: 46px;
     background: rgba(255,255,255,.6);
   }
   .cat-thumb img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
     filter: sepia(10%) saturate(85%) hue-rotate(-8deg) brightness(1.04);
   }
   .cat-icon svg { width: 96px; height: 96px; }
@@ -1317,7 +1317,7 @@
 <div class="page-wrap">
 
   <!-- ── LEFT COLUMN ── -->
-  <div style="min-width:0;overflow:hidden">
+  <div style="min-width:0;overflow:visible;position:relative">
 
     <!-- HERO -->
     <div class="hero fade" onclick="openHeroVideo()" style="cursor:pointer;">
@@ -1329,7 +1329,7 @@
         <h1 data-i18n="hero-title">Comfortable. Playful. Loved.<br>Clothing for Your Little Explorer.</h1>
         <a class="btn-hero" href="#" onclick="goTo('categories');return false;" data-i18n="hero-btn">Shop the Collection</a>
       </div>
-      <img src="images/corner_image.png" alt="" style="position:absolute;bottom:-30px;left:-105px;width:220px;height:auto;pointer-events:none;z-index:3;animation:float 3s ease-in-out infinite;filter:drop-shadow(0 8px 16px rgba(0,0,0,.18));">
+      <img src="images/corner_image.png" alt="" style="position:absolute;bottom:-30px;left:-100px;width:220px;height:auto;pointer-events:none;z-index:3;animation:float 3s ease-in-out infinite;filter:drop-shadow(0 8px 16px rgba(0,0,0,.18));">
     </div>
 
     <!-- CATEGORIES -->
