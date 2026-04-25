@@ -2801,7 +2801,7 @@ const _ALL_PRODUCTS = [
     }
     const h = footer ? absBottom(footer) : Math.max(document.body.scrollHeight, document.documentElement.scrollHeight);
     const wrap = document.createElement('div');
-    wrap.style.cssText = 'position:absolute;top:0;left:0;width:100%;height:'+h+'px;pointer-events:none;z-index:0;overflow:hidden;';
+    wrap.style.cssText = 'position:absolute;top:0;left:0;width:100%;height:'+h+'px;pointer-events:none;z-index:0;';
     // Header area decos
     for (let i = 0; i < 18; i++) {
       const d = decos[Math.floor(Math.random() * decos.length)];
